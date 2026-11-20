@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngô Thị Yến Nhi — Marketing Executive</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <script src="./tailwind-config.js"></script>
+
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body class="bg-dot-grid text-slate-900 antialiased selection:bg-brand-yellow selection:text-slate-900 overflow-x-hidden">
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <header class="fixed top-4 left-0 right-0 z-50 px-4">
+        <nav id="portfolio-nav" class="max-w-3xl mx-auto bg-white/85 backdrop-blur-md border border-slate-200/80 shadow-lg shadow-slate-900/5 rounded-full px-5 py-3 flex items-center justify-between transition-all">
+            <a href="#" class="font-display font-extrabold text-base sm:text-lg tracking-tight text-slate-900 flex shrink-0 items-center gap-2 keep-together">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-blue inline-block"></span>
+                <span>Yen Nhi<span class="text-brand-blue">.</span></span>
+            </a>
+
+            <div class="nav-links flex min-w-0 items-center gap-4 sm:gap-7 text-sm font-medium text-slate-600">
+                <a href="#work-numbers" class="hover:text-brand-blue transition-colors">Work in Numbers</a>
+                <a href="#work-action" class="hover:text-brand-blue transition-colors">Work in Action</a>
+                <a href="#contact" class="px-4 py-1.5 rounded-full bg-brand-blue text-white font-semibold hover:bg-brand-darkBlue transition-all shadow-sm">
+                    Contact
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== 01. INTRODUCTION (HERO SECTION) ==================== -->
+    <section id="intro" class="pt-28 pb-20 md:pt-36 md:pb-28 px-4 sm:px-6 max-w-6xl mx-auto">
+        <!-- Interactive Search Prompt Pill -->
+        <div class="max-w-xl mx-auto mb-12 text-center reveal active">
+            <p class="text-xs sm:text-sm font-medium text-slate-500 mb-3">
+                Explore <span class="text-brand-blue font-semibold">my marketing portfolio</span>
+            </p>
+            <div class="bg-white border-2 border-brand-blue/20 shadow-xl shadow-blue-900/5 rounded-full p-2 pl-5 flex items-center justify-between">
+                <div class="flex min-w-0 items-center gap-2 pr-2 sm:gap-3">
+                    <i data-lucide="search" class="w-5 h-5 text-brand-blue shrink-0"></i>
+                    <span id="typewriter-text" class="font-display font-bold text-slate-800 text-sm sm:text-base leading-snug">Ngô Thị Yến Nhi</span>
+                    <span class="search-caret w-0.5 h-5 shrink-0 bg-brand-blue animate-blink" aria-hidden="true"></span>
+                </div>
+                <a href="#work-numbers" aria-label="Explore work" class="w-9 h-9 rounded-full bg-brand-blue text-white flex items-center justify-center hover:bg-brand-darkBlue transition-transform hover:scale-105 shrink-0">
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+            <!-- Hashtags -->
+            <div class="flex flex-wrap justify-center gap-2 mt-3">
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-blue border border-blue-100">#productmessaging</span>
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-blue border border-blue-100">#contentwriting</span>
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-blue border border-blue-100">#demandgen</span>
+            </div>
+        </div>
+
+        <!-- Main Hero 2-Column Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Column: Copy & CTA -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal active">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-yellow text-slate-900 font-display font-bold text-xs sm:text-sm shadow-sm">
+                    <span>4+ Years in Marketing</span>
+                </div>
+
+                <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-brand-blue leading-[1.1]">
+                    Ngô Thị <span class="keep-together">Yến Nhi</span>
+                </h1>
+
+                <h2 class="font-display font-bold text-xl sm:text-2xl lg:text-3xl text-slate-900">
+                    <span id="hero-highlight" class="highlight-marker">Marketing Executive</span>
+                </h2>
+
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    I write product copy and run campaigns across websites, email, search, and paid social. My work spans fintech, manufacturing, and education, with particular experience in B2B campaigns.
+                </p>
+
+                <!-- Hero Buttons -->
+                <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-brand-blue text-white font-display font-bold text-sm sm:text-base hover:bg-brand-darkBlue transition-all shadow-lg shadow-blue-600/25 flex items-center justify-center gap-2">
+                        <span>Contact me</span>
+                        <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="./media/nhi-ngo-marketing-executive-cv.pdf" download class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-white text-slate-900 border-2 border-slate-200 font-display font-bold text-sm sm:text-base hover:border-brand-blue hover:text-brand-blue transition-all flex items-center justify-center gap-2">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        <span>Download résumé</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Phone Profile and Floating Campaign Results -->
+            <div class="lg:col-span-5 flex justify-center reveal active">
+                <div class="hero-preview" role="group" aria-label="Selected campaign results">
+                    <div class="hero-phone">
+                        <div class="hero-phone-notch" aria-hidden="true"></div>
+                        <div class="mb-4 text-center">
+                            <div id="profile-photo">
+                                <div class="profile-photo-flip">
+                                    <img src="./media/profile.jpg" alt="Ngô Thị Yến Nhi" width="1920" height="2560">
+                                    <span class="profile-photo-name font-display" aria-hidden="true">Nhi</span>
+                                </div>
+                            </div>
+                            <p class="mt-2.5 font-display text-base font-extrabold leading-snug text-slate-900">Ngô Thị Yến Nhi</p>
+                        </div>
+
+                        <a href="#case-email" class="hero-result-link">
+                            <span class="flex items-center gap-2">
+                                <span class="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-blue-50 text-brand-blue" aria-hidden="true">
+                                    <i data-lucide="mail" class="h-3.5 w-3.5"></i>
+                                </span>
+                                <span class="min-w-0 flex-1 text-xs font-bold leading-snug text-slate-700">Email Marketing</span>
+                                <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 shrink-0 text-brand-blue" aria-hidden="true"></i>
+                            </span>
+                            <span class="mt-1.5 flex flex-wrap items-baseline gap-x-1.5 leading-tight">
+                                <strong class="font-display text-3xl font-extrabold tracking-tight text-brand-blue">3</strong>
+                                <span class="font-display text-sm font-extrabold">signed contracts</span>
+                            </span>
+                            <span class="mt-1 block text-xs leading-snug text-slate-600">From email outreach at Webcash Vietnam</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-result-secondary">
+                        <a href="#case-seo" class="hero-result-link hero-result-seo">
+                            <span class="flex items-center gap-1.5">
+                                <span class="grid h-6 w-6 shrink-0 place-items-center rounded-md bg-white/20" aria-hidden="true">
+                                    <i data-lucide="search" class="h-3.5 w-3.5"></i>
+                                </span>
+                                <span class="min-w-0 flex-1 text-xs font-bold leading-snug">SEO Content</span>
+                                <i data-lucide="arrow-up-right" class="h-3 w-3 shrink-0" aria-hidden="true"></i>
+                            </span>
+                            <strong class="mt-2 block font-display text-2xl sm:text-3xl font-extrabold tracking-tight leading-none">125</strong>
+                            <span class="mt-1 block text-xs leading-snug">Keywords in the top 3</span>
+                        </a>
+                        <a href="#case-facebook-ads" class="hero-result-link hero-result-ads">
+                            <span class="flex items-center gap-1.5">
+                                <span class="grid h-6 w-6 shrink-0 place-items-center rounded-md bg-slate-900/10" aria-hidden="true">
+                                    <i data-lucide="megaphone" class="h-3.5 w-3.5"></i>
+                                </span>
+                                <span class="min-w-0 flex-1 text-xs font-bold leading-snug">Facebook Ads</span>
+                                <i data-lucide="arrow-up-right" class="h-3 w-3 shrink-0" aria-hidden="true"></i>
+                            </span>
+                            <strong class="mt-2 block font-display text-2xl sm:text-3xl font-extrabold tracking-tight leading-none">+800%</strong>
+                            <span class="mt-1 block text-xs leading-snug">WeBill365 monthly lead growth</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 02. WORK IN NUMBERS (UNIFIED COHESIVE CONTAINER) ==================== -->
+    <section id="work-numbers" class="bg-slate-950 text-white py-20 md:py-28 px-4 sm:px-6 border-y border-slate-800 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 pointer-events-none results-dot-pattern"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10 space-y-12">
+            <!-- Unified Section Header & Summary Metrics -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 reveal">
+                <div class="space-y-3 max-w-2xl">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-yellow text-slate-900 font-display font-extrabold text-xs uppercase tracking-widest">
+                        <span>Work in Numbers</span>
+                    </span>
+                    <h2 class="font-display font-extrabold text-3xl sm:text-5xl tracking-tight text-white">
+                        Campaigns and results
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Results from email outreach, SEO content, and Facebook lead generation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-stack">
+                <!-- CASE 01 CARD: EMAIL MARKETING (COBALT BLUE CARD) -->
+                <div id="case-email" class="project-stack-card bg-brand-blue text-white rounded-[2rem] p-6 sm:p-10 lg:p-12 shadow-2xl overflow-hidden reveal">
+                    <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
+                        <!-- Left Column: Heading, Concise Description & Result Badge -->
+                        <div class="lg:col-span-5 space-y-5">
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-brand-yellow font-display font-bold text-xs tracking-wider">
+                                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                                <span class="balanced-label">01 · Email Marketing · Webcash&nbsp;Vietnam</span>
+                            </div>
+
+                            <h3 class="font-display font-extrabold text-2xl sm:text-3xl leading-tight">
+                                Reaching Korean business leaders in Vietnam
+                            </h3>
+
+                            <p class="text-blue-100 text-sm sm:text-base leading-relaxed">
+                                Ran WeCMS and Morningmate email campaigns for Korean executives and business associations in Vietnam, handling audience segmentation, copywriting, HTML email production, sending, and reporting.
+                            </p>
+
+                            <!-- Highlighted Result Card -->
+                            <div class="bg-brand-yellow text-slate-900 rounded-2xl p-4 sm:p-5 shadow-lg">
+                                <div class="flex items-start gap-2">
+                                    <i data-lucide="file-check-2" class="mt-0.5 w-5 h-5 shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <p class="font-display text-base font-extrabold leading-snug">2,000+ C-level executives reached</p>
+                                        <p class="mt-1 text-xs sm:text-sm text-slate-800">At Korean companies in Vietnam</p>
+                                    </div>
+                                </div>
+                                <dl class="mt-3 grid grid-cols-2 gap-3 border-t border-slate-900/15 pt-3">
+                                    <div>
+                                        <dt class="text-xs font-medium text-slate-800">Prospects</dt>
+                                        <dd class="font-display text-xl font-extrabold">12</dd>
+                                    </div>
+                                    <div>
+                                        <dt class="text-xs font-medium text-slate-800">Signed contracts</dt>
+                                        <dd class="font-display text-xl font-extrabold">3</dd>
+                                    </div>
+                                </dl>
+                            </div>
+
+                        </div>
+
+                        <!-- Right Column: 2 Dedicated HTML Email Showcase Slots -->
+                        <div class="lg:col-span-7">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                                <!-- HTML Email Slot 01: Cash Management Software -->
+                                <div class="bg-white text-slate-900 rounded-2xl overflow-hidden shadow-xl border border-white/20 flex flex-col">
+                                    <div class="bg-slate-100 px-4 py-2.5 border-b border-slate-200 flex items-center justify-between gap-2">
+                                        <div class="flex shrink-0 items-center gap-1">
+                                            <span class="w-2 h-2 rounded-full bg-rose-400"></span>
+                                            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                        </div>
+                                        <span class="balanced-label text-center text-[11px] leading-snug font-display font-bold text-slate-600">WeCMS · Cash&nbsp;Management</span>
+                                        <button type="button" data-email-preview="1" aria-label="Expand WeCMS · Cash Management email" aria-haspopup="dialog" aria-controls="email-preview-dialog" title="Expand email" class="w-8 h-8 shrink-0 rounded-lg bg-white text-brand-blue hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue flex items-center justify-center">
+                                            <i data-lucide="arrow-up-right" class="w-4 h-4 shrink-0" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div id="html-email-slot-1" class="relative w-full h-[340px] bg-slate-50 overflow-hidden">
+                                        <iframe id="email-iframe-1" title="Cash Management Software Email Preview" class="email-thumbnail" sandbox></iframe>
+                                    </div>
+                                </div>
+
+                                <!-- HTML Email Slot 02: Collaboration Software -->
+                                <div class="bg-white text-slate-900 rounded-2xl overflow-hidden shadow-xl border border-white/20 flex flex-col">
+                                    <div class="bg-slate-100 px-4 py-2.5 border-b border-slate-200 flex items-center justify-between gap-2">
+                                        <div class="flex shrink-0 items-center gap-1">
+                                            <span class="w-2 h-2 rounded-full bg-rose-400"></span>
+                                            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                        </div>
+                                        <span class="balanced-label text-center text-[11px] leading-snug font-display font-bold text-slate-600">Morningmate · Team&nbsp;Collaboration</span>
+                                        <button type="button" data-email-preview="2" aria-label="Expand Morningmate · Team Collaboration email" aria-haspopup="dialog" aria-controls="email-preview-dialog" title="Expand email" class="w-8 h-8 shrink-0 rounded-lg bg-white text-brand-blue hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-blue flex items-center justify-center">
+                                            <i data-lucide="arrow-up-right" class="w-4 h-4 shrink-0" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div id="html-email-slot-2" class="relative w-full h-[340px] bg-[#ECEAF4] overflow-hidden">
+                                        <iframe id="email-iframe-2" title="Collaboration Software Email Preview" class="email-thumbnail" sandbox></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CASE 02 CARD: SEO CONTENT STRATEGY (CRISP WHITE CARD) -->
+                <div id="case-seo" class="project-stack-card bg-white text-slate-900 rounded-[2rem] p-6 sm:p-10 lg:p-12 shadow-2xl reveal">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+                        <!-- Left Column: Visual SEO Growth Chart (ADX Plywood & OHA Taiwan) -->
+                        <div class="lg:col-span-7 order-2 lg:order-1">
+                            <div class="bg-slate-50 rounded-3xl p-5 sm:p-7 border border-slate-200/80 space-y-5">
+                                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-4">
+                                    <h4 class="font-display font-extrabold text-xl sm:text-2xl text-slate-900">Organic Search Growth</h4>
+                                    <span class="px-3 py-1 rounded-full bg-brand-yellow text-slate-900 font-display font-bold text-xs">
+                                        125 Top 3 Keywords
+                                    </span>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 seo-chart-group">
+                                    <!-- Project A: ADX Plywood -->
+                                    <div class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 flex flex-col justify-between shadow-sm">
+                                        <div>
+                                            <div class="flex flex-wrap items-center justify-between gap-x-2 gap-y-1 mb-1">
+                                                <span class="font-display font-extrabold text-sm text-slate-900">ADX Plywood</span>
+                                                <span class="text-xs font-display font-extrabold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full keep-together">+630% Traffic</span>
+                                            </div>
+                                            <p class="text-xs text-slate-500 mb-4">B2B Manufacturing (2023 → 2024)</p>
+
+                                            <div class="h-36 flex items-end justify-around gap-4 px-4 pt-5 pb-2 bg-slate-50 rounded-xl border border-slate-100">
+                                                <div class="flex flex-col items-center justify-end gap-1.5 w-1/2 h-full">
+                                                    <span class="text-xs font-display font-bold text-slate-500">3,690</span>
+                                                    <div data-target-height="22px" class="seo-bar w-11 bg-slate-300 rounded-t-lg transition-all duration-1000 ease-out"></div>
+                                                    <span class="text-[11px] font-semibold text-slate-500">2023</span>
+                                                </div>
+                                                <div class="flex flex-col items-center justify-end gap-1.5 w-1/2 h-full">
+                                                    <span class="text-xs font-display font-extrabold text-brand-blue">26,953</span>
+                                                    <div data-target-height="100px" class="seo-bar w-11 bg-brand-blue rounded-t-lg shadow-md shadow-blue-500/25 transition-all duration-1000 ease-out delay-150"></div>
+                                                    <span class="text-[11px] font-bold text-slate-900">2024</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-x-2 gap-y-1 text-xs">
+                                            <span class="text-slate-500">Ranking Keywords</span>
+                                            <span class="font-display font-extrabold text-slate-900 keep-together">601 → 1,809</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Project B: OHA Taiwan -->
+                                    <div class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 flex flex-col justify-between shadow-sm">
+                                        <div>
+                                            <div class="flex flex-wrap items-center justify-between gap-x-2 gap-y-1 mb-1">
+                                                <span class="font-display font-extrabold text-sm text-slate-900">OHA Taiwan</span>
+                                                <span class="text-xs font-display font-extrabold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full keep-together">+640% Traffic</span>
+                                            </div>
+                                            <p class="text-xs text-slate-500 mb-4">Education &amp; HR (2022 → 2023)</p>
+
+                                            <div class="h-36 flex items-end justify-around gap-4 px-4 pt-5 pb-2 bg-slate-50 rounded-xl border border-slate-100">
+                                                <div class="flex flex-col items-center justify-end gap-1.5 w-1/2 h-full">
+                                                    <span class="text-xs font-display font-bold text-slate-500">281</span>
+                                                    <div data-target-height="18px" class="seo-bar w-11 bg-slate-300 rounded-t-lg transition-all duration-1000 ease-out delay-200"></div>
+                                                    <span class="text-[11px] font-semibold text-slate-500">2022</span>
+                                                </div>
+                                                <div class="flex flex-col items-center justify-end gap-1.5 w-1/2 h-full">
+                                                    <span class="text-xs font-display font-extrabold text-slate-900">2,079</span>
+                                                    <div data-target-height="100px" class="seo-bar w-11 bg-brand-yellow border border-amber-300 rounded-t-lg shadow-md transition-all duration-1000 ease-out delay-300"></div>
+                                                    <span class="text-[11px] font-bold text-slate-900">2023</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-x-2 gap-y-1 text-xs">
+                                            <span class="text-slate-500">Ranking Keywords</span>
+                                            <span class="font-display font-extrabold text-slate-900 keep-together">749 → 1,444</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Heading, Concise Description & Result Badge -->
+                        <div class="lg:col-span-5 order-1 lg:order-2 space-y-5">
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-brand-blue font-display font-bold text-xs tracking-wider">
+                                <i data-lucide="search-check" class="w-3.5 h-3.5"></i>
+                                <span>02 · SEO Content Strategy</span>
+                            </div>
+
+                            <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 leading-tight">
+                                Growing organic search traffic
+                            </h3>
+
+                            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                                Researched buyer queries and grouped related content into topic clusters. Trained interns to write for search intent.
+                            </p>
+
+                            <div class="bg-brand-blue text-white rounded-2xl p-4 sm:p-5 shadow-lg space-y-1.5">
+                                <div class="flex items-center gap-2 font-display font-extrabold text-base text-brand-yellow">
+                                    <i data-lucide="trending-up" class="w-5 h-5 shrink-0"></i>
+                                    <span class="balanced-label">Organic traffic grew<br>630% at ADX and 640% at OHA</span>
+                                </div>
+                                <p class="text-xs sm:text-sm text-blue-100">
+                                    ADX Plywood had 59 top-three keywords and 117 featured snippets. OHA Taiwan had 66 top-three keywords.
+                                </p>
+                            </div>
+
+                            <button type="button" data-case="adx" class="inline-flex items-center gap-2 font-display font-bold text-sm text-brand-blue hover:text-brand-darkBlue transition-colors">
+                                <span>View SEO case study</span>
+                                <i data-lucide="arrow-up-right" class="w-4 h-4 shrink-0"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CASE 03 CARD: FACEBOOK ADS (SOFT PALE YELLOW CARD WITH COBALT BLUE BOXES) -->
+                <div id="case-facebook-ads" class="project-stack-card bg-amber-50 text-slate-900 border border-amber-200/80 rounded-[2rem] p-6 sm:p-10 lg:p-12 shadow-2xl reveal">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+                        <!-- Left Column: Heading, Concise Description & Result Badge -->
+                        <div class="lg:col-span-5 space-y-5">
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-amber-200 text-brand-blue font-display font-bold text-xs tracking-wider">
+                                <i data-lucide="megaphone" class="w-3.5 h-3.5 text-brand-blue"></i>
+                                <span class="balanced-label">03 · Facebook Ads · B2B&nbsp;SaaS</span>
+                            </div>
+
+                            <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 leading-tight">
+                                Generating leads with Facebook Ads
+                            </h3>
+
+                            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                                Brought Facebook Ads for <strong class="text-slate-900">WeBill365</strong> and <strong class="text-slate-900">Morningmate</strong> in-house. Tailored targeting, ad copy, and visuals to each product.
+                            </p>
+
+                            <div class="bg-brand-blue text-white rounded-2xl p-4 sm:p-5 shadow-lg space-y-1.5">
+                                <div class="flex items-center gap-2 font-display font-extrabold text-base text-brand-yellow">
+                                    <i data-lucide="rocket" class="w-5 h-5 shrink-0"></i>
+                                    <span class="balanced-label">334 leads across two products</span>
+                                </div>
+                                <p class="text-xs sm:text-sm text-blue-100">
+                                    WeBill365 generated 237 leads in 2025. Morningmate generated 97 in the first half of 2026.
+                                </p>
+                            </div>
+
+                            <button type="button" data-case="paidads" class="inline-flex items-center gap-2 font-display font-bold text-sm text-brand-blue hover:text-brand-darkBlue transition-colors">
+                                <span>View Facebook Ads case study</span>
+                                <i data-lucide="arrow-up-right" class="w-4 h-4 shrink-0"></i>
+                            </button>
+                        </div>
+
+                        <!-- Right Column: Visual Paid Ads Funnel & Growth Chart -->
+                        <div class="lg:col-span-7">
+                            <div class="bg-brand-blue text-white rounded-3xl p-5 sm:p-7 border border-blue-400/30 shadow-xl space-y-5">
+                                <!-- Card Header + Agency vs In-House Takeover Highlight -->
+                                <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/15 pb-4">
+                                    <div>
+                                        <h4 class="font-display font-extrabold text-xl sm:text-2xl text-white">Facebook Ads Results</h4>
+                                    </div>
+                                    <div class="flex items-center gap-3 bg-white text-slate-900 rounded-2xl px-4 py-2 shrink-0 shadow-sm">
+                                        <div class="text-center">
+                                            <p class="text-[10px] uppercase text-slate-500 font-semibold">WeBill365 · Agency</p>
+                                            <p class="font-display font-bold text-sm text-slate-700">~5/mo</p>
+                                        </div>
+                                        <i data-lucide="arrow-right" class="w-4 h-4 text-brand-blue"></i>
+                                        <div class="text-center">
+                                            <p class="text-[10px] uppercase text-brand-blue font-extrabold">In-House</p>
+                                            <p class="font-display font-extrabold text-base text-slate-900">~45/mo</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Stacked Horizontal Rows (1 Top, 1 Bottom) -->
+                                <div class="space-y-4">
+                                    <!-- Row 1: WeBill365 · Fee Collection (Full-Year 2025) -->
+                                    <div class="bg-white text-slate-900 rounded-2xl p-4 sm:p-5 shadow-md space-y-3.5">
+                                        <div>
+                                            <span class="text-[11px] font-display font-bold uppercase tracking-wider text-brand-blue">Full-Year 2025</span>
+                                            <h5 class="font-display font-extrabold text-base sm:text-lg text-slate-900 leading-snug">
+                                                WeBill365 · Fee Collection
+                                            </h5>
+                                        </div>
+
+                                        <!-- Horizontal 3-Step Funnel -->
+                                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                                            <div class="bg-slate-50 rounded-xl px-3.5 py-2.5 border border-slate-200/70">
+                                                <p class="text-[11px] text-slate-500 font-medium">Ad Spend</p>
+                                                <p class="font-display font-extrabold text-base text-slate-900">40M VND</p>
+                                            </div>
+                                            <div class="bg-slate-50 rounded-xl px-3.5 py-2.5 border border-slate-200/70">
+                                                <p class="text-[11px] text-slate-500 font-medium">Messages</p>
+                                                <p class="font-display font-extrabold text-base text-slate-900">410 <span class="text-xs font-normal text-slate-500">(97.5k/msg)</span></p>
+                                            </div>
+                                            <div class="bg-brand-blue rounded-xl px-3.5 py-2.5 text-white shadow-sm">
+                                                <p class="text-[11px] text-blue-100 font-semibold">Leads</p>
+                                                <p class="font-display font-extrabold text-base text-brand-yellow">237 <span class="text-xs font-bold text-white">(57.8%)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Row 2: Work Management & Collaboration Software (H1 2026) -->
+                                    <div class="bg-white text-slate-900 rounded-2xl p-4 sm:p-5 shadow-md space-y-3.5">
+                                        <div>
+                                            <span class="text-[11px] font-display font-bold uppercase tracking-wider text-brand-blue">Jan–Jun 2026</span>
+                                            <h5 class="font-display font-extrabold text-base sm:text-lg text-slate-900 leading-snug">
+                                                Morningmate · Team Collaboration
+                                            </h5>
+                                        </div>
+
+                                        <!-- Horizontal 3-Step Funnel -->
+                                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                                            <div class="bg-slate-50 rounded-xl px-3.5 py-2.5 border border-slate-200/70">
+                                                <p class="text-[11px] text-slate-500 font-medium">Ad Spend</p>
+                                                <p class="font-display font-extrabold text-base text-slate-900">30M VND</p>
+                                            </div>
+                                            <div class="bg-slate-50 rounded-xl px-3.5 py-2.5 border border-slate-200/70">
+                                                <p class="text-[11px] text-slate-500 font-medium">Messages</p>
+                                                <p class="font-display font-extrabold text-base text-slate-900">239</p>
+                                            </div>
+                                            <div class="bg-brand-blue rounded-xl px-3.5 py-2.5 text-white shadow-sm">
+                                                <p class="text-[11px] text-blue-100 font-semibold">Leads</p>
+                                                <p class="font-display font-extrabold text-base text-brand-yellow">97 <span class="text-xs font-bold text-white">(40.6%)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 03. WORK IN ACTION (WEBSITES, AI MEDIA & EXHIBITOR MANAGEMENT) ==================== -->
+    <section id="work-action" class="py-20 md:py-28 px-4 sm:px-6 max-w-6xl mx-auto space-y-12">
+        <!-- Section 03 Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 reveal">
+            <div class="space-y-3 max-w-2xl">
+                <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-100 text-brand-blue font-display font-extrabold text-xs uppercase tracking-widest">
+                    <span>Work in Action</span>
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-5xl tracking-tight text-slate-900">
+                    Websites, campaign creative &amp; trade shows
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Selected projects in website content and development, ad production, and trade show marketing.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-stack">
+            <div class="project-stack-card grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
+                <!-- Card 01: Website Content · Webcash Vietnam · Framer -->
+                <div class="bg-brand-yellow text-slate-900 rounded-[2rem] p-8 sm:p-10 flex flex-col justify-between shadow-lg transition-all duration-300 reveal">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-6">
+                            <span class="balanced-label font-display font-bold text-xs px-3 py-1.5 rounded-full bg-slate-900/10">01 • Website Content &amp; Layout</span>
+                            <div class="w-11 h-11 shrink-0 rounded-full bg-slate-900/10 flex items-center justify-center">
+                                <i data-lucide="globe" class="w-5 h-5 text-slate-900"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-display font-extrabold text-2xl sm:text-3xl mb-3">
+                            Webcash Vietnam · Framer
+                        </h3>
+                        <p class="text-slate-800 text-sm sm:text-base leading-relaxed mb-8">
+                            Planned page layouts, wrote product copy, and prepared visuals for Webcash Vietnam’s Framer site.
+                        </p>
+                    </div>
+                    <a href="https://webcashvietnam.com/vn/wecms" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 font-display font-bold text-sm text-slate-900 underline decoration-2 underline-offset-4 hover:opacity-75 transition-opacity">
+                        <span>View Framer Project</span>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4 shrink-0"></i>
+                    </a>
+                </div>
+
+                <!-- Card 02: Web Development by WordPress -->
+                <div class="bg-white text-slate-900 border border-slate-200/80 rounded-[2rem] p-8 sm:p-10 flex flex-col justify-between shadow-lg transition-all duration-300 reveal">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-6">
+                            <span class="font-display font-bold text-xs px-3 py-1.5 rounded-full bg-blue-50 text-brand-blue">01 • Web Development</span>
+                            <div class="w-11 h-11 shrink-0 rounded-full bg-blue-50 flex items-center justify-center">
+                                <i data-lucide="blocks" class="w-5 h-5 text-brand-blue"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-display font-extrabold text-2xl sm:text-3xl mb-3">
+                            SafeKids · WordPress &amp; Elementor
+                        </h3>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-8">
+                            Built the SafeKids website in WordPress. Set up hosting, organized the content, and designed responsive layouts in Elementor.
+                        </p>
+                    </div>
+                    <a href="https://safekidsedu.vn/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 font-display font-bold text-sm text-brand-blue hover:text-brand-darkBlue transition-colors">
+                        <span>View WordPress Project</span>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4 shrink-0"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dedicated Large Section 03: Images & Videos by AI (Interactive Multi-Slide Showcase Screen) -->
+            <div id="campaign-project" class="project-stack-card bg-slate-950 text-white rounded-[2rem] p-6 sm:p-10 lg:p-12 shadow-2xl border border-slate-800 reveal">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+                    <!-- Left Column: Info + Slide Switcher Controls -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-brand-yellow font-display font-bold text-xs tracking-wider">
+                            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                            <span>03 • Campaign Creative</span>
+                        </div>
+
+                        <h3 class="font-display font-extrabold text-2xl sm:text-4xl text-white leading-tight">
+                            Ad visuals &amp; short videos
+                        </h3>
+
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Developed ad concepts and scripts, then used AI to create visuals and video scenes.
+                        </p>
+
+                        <!-- Interactive Playlist / Slide Selector -->
+                        <div class="space-y-2.5 pt-1" id="ai-media-tabs">
+                            <button type="button" data-ai-tab="0" class="ai-tab-btn w-full text-left p-3.5 rounded-2xl bg-brand-blue text-white border border-brand-blue transition-all flex items-center justify-between">
+                                <div>
+                                    <p class="font-display font-bold text-sm">01 · Product Feature Videos</p>
+                                    <p class="text-xs text-blue-100 mt-0.5">Short Video · Vertical and Square</p>
+                                </div>
+                                <i data-lucide="play-circle" class="w-5 h-5 text-brand-yellow shrink-0"></i>
+                            </button>
+
+                            <button type="button" data-ai-tab="1" class="ai-tab-btn w-full text-left p-3.5 rounded-2xl bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 transition-all flex items-center justify-between">
+                                <div>
+                                    <p class="font-display font-bold text-sm">02 · Pain Point–Led Video Ads</p>
+                                    <p class="text-xs text-slate-400 mt-0.5">Short Video · AI Voiceover and Motion</p>
+                                </div>
+                                <i data-lucide="video" class="w-5 h-5 text-slate-400 shrink-0"></i>
+                            </button>
+
+                            <button type="button" data-ai-tab="2" class="ai-tab-btn w-full text-left p-3.5 rounded-2xl bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 transition-all flex items-center justify-between">
+                                <div>
+                                    <p class="font-display font-bold text-sm">03 · Social Ad Visuals</p>
+                                </div>
+                                <i data-lucide="image" class="w-5 h-5 text-slate-400 shrink-0"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Large Embedded Screening Window with Next/Prev Swipe -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-slate-900 rounded-3xl border border-white/15 overflow-hidden shadow-2xl">
+                            <!-- Top Screen Bar -->
+                            <div class="bg-slate-900/90 px-3 sm:px-4 py-3 border-b border-white/10 flex items-center justify-between gap-2">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                                    <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                                    <span id="ai-screen-label" class="balanced-label ml-2 text-xs leading-snug font-display font-bold text-slate-300">Video 01 / 03 · WeCMS Cash Management Ad</span>
+                                </div>
+                                <div class="flex shrink-0 items-center gap-1.5">
+                                    <button type="button" data-ai-step="-1" aria-label="Previous media" class="w-8 h-8 rounded-full bg-white/10 hover:bg-brand-blue text-white flex items-center justify-center transition-colors">
+                                        <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                                    </button>
+                                    <button type="button" data-ai-step="1" aria-label="Next media" class="w-8 h-8 rounded-full bg-white/10 hover:bg-brand-blue text-white flex items-center justify-center transition-colors">
+                                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Swipeable / Switchable Display Viewport -->
+                            <div id="ai-media-viewport" class="relative aspect-video bg-slate-950 overflow-hidden select-none">
+                                <!-- Slide 0: Video Slot 1 -->
+                                <div data-ai-slide="0" class="ai-slide absolute inset-0 bg-black transition-all duration-500">
+                                    <video class="block w-full h-full object-contain" controls playsinline preload="metadata" aria-label="WeCMS Cash Management Ad">
+                                        <source src="./media/wecms.mp4" type="video/mp4">
+                                        Your browser does not support MP4 video.
+                                    </video>
+                                </div>
+
+                                <!-- Slide 1: Video Slot 2 -->
+                                <div data-ai-slide="1" class="ai-slide absolute inset-0 bg-black transition-all duration-500 opacity-0 pointer-events-none translate-x-8" inert>
+                                    <video class="block w-full h-full object-contain" controls playsinline preload="metadata" aria-label="Bilingual Morningmate Ad">
+                                        <source src="./media/monringmate.mp4" type="video/mp4">
+                                        Your browser does not support MP4 video.
+                                    </video>
+                                </div>
+
+                                <!-- Slide 2: Campaign Visuals Gallery -->
+                                <div data-ai-slide="2" class="ai-slide absolute inset-0 transition-all duration-500 opacity-0 pointer-events-none translate-x-8 bg-slate-900" inert>
+                                    <div class="marquee-wrapper social-ad-gallery relative overflow-hidden bg-slate-950 py-2">
+                                        <div aria-hidden="true" class="pointer-events-none absolute inset-y-0 left-0 z-10 w-6 bg-gradient-to-r from-slate-950 to-transparent"></div>
+                                        <div aria-hidden="true" class="pointer-events-none absolute inset-y-0 right-0 z-10 w-6 bg-gradient-to-l from-slate-950 to-transparent"></div>
+                                        <div class="social-ad-gallery-track flex w-max animate-gallery-marquee">
+                                            <div class="flex shrink-0 gap-4 pr-4">
+                                                <img src="./media/morningmate-social-image-1.png" alt="Morningmate social ad 1" class="shrink-0 rounded-xl border border-white/15 bg-slate-900 object-contain shadow-sm" decoding="async">
+                                                <img src="./media/morningmate-social-image-3.png" alt="Morningmate social ad 3" class="shrink-0 rounded-xl border border-white/15 bg-slate-900 object-contain shadow-sm" decoding="async">
+                                                <img src="./media/morningmate-social-image-4.png" alt="Morningmate social ad 4" class="shrink-0 rounded-xl border border-white/15 bg-slate-900 object-contain shadow-sm" decoding="async">
+                                                <img src="./media/morningmate-social-image-5.png" alt="Morningmate social ad 5" class="shrink-0 rounded-xl border border-white/15 bg-slate-900 object-contain shadow-sm" decoding="async">
+                                            </div>
+                                            <div class="flex shrink-0 gap-4 pr-4" aria-hidden="true">
+                                                <img src="./media/morningmate-social-image-1.png" alt="" class="shrink-0 rounded-xl border border-white/15 bg-slate-900 object-contain shadow-sm" decoding="async">
+                                                <img src="./media/morningmate-social-image-3.png" alt="" class="shrink-0 rounded-xl border border-white/15 bg-slate-900 object-contain shadow-sm" decoding="async">
+                                                <img src="./media/morningmate-social-image-4.png" alt="" class="shrink-0 rounded-xl border border-white/15 bg-slate-900 object-contain shadow-sm" decoding="async">
+                                                <img src="./media/morningmate-social-image-5.png" alt="" class="shrink-0 rounded-xl border border-white/15 bg-slate-900 object-contain shadow-sm" decoding="async">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bottom Dots Indicator -->
+                            <div class="bg-slate-900 px-5 py-3 border-t border-white/10 flex items-center justify-between gap-2">
+                                <span id="ai-media-hint" class="text-[11px] text-slate-400">Swipe or use the arrows</span>
+                                <div class="flex shrink-0 items-center gap-2">
+                                    <button type="button" data-ai-dot="0" aria-label="Slide 1" class="ai-dot w-6 h-2 rounded-full bg-brand-yellow transition-all"></button>
+                                    <button type="button" data-ai-dot="1" aria-label="Slide 2" class="ai-dot w-2 h-2 rounded-full bg-white/30 transition-all"></button>
+                                    <button type="button" data-ai-dot="2" aria-label="Slide 3" class="ai-dot w-2 h-2 rounded-full bg-white/30 transition-all"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full-Width Feature Card 04: B2B Exhibition Management (Standalone Section) -->
+            <div id="exhibition-project" class="project-stack-card grid bg-white rounded-[2rem] p-6 sm:p-10 shadow-xl border border-slate-200/80 reveal">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+                    <!-- Left Info -->
+                    <div class="lg:col-span-5 space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-brand-blue font-display font-bold text-xs tracking-wider">
+                            <i data-lucide="calendar-check-2" class="w-3.5 h-3.5"></i>
+                            <span class="balanced-label">04 • B2B Exhibition Management</span>
+                        </div>
+
+                        <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 leading-tight">
+                            Trade Show Marketing for SaaS and Plywood
+                        </h3>
+
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Supported trade shows for Webcash Vietnam and ADX Plywood. Coordinated with organizers, planned promotion, prepared booth materials, and managed setup and on-site activities.
+                        </p>
+
+                        <button type="button" data-case="exhibition" class="inline-flex items-center gap-2 font-display font-bold text-sm text-brand-blue hover:text-brand-darkBlue transition-colors">
+                            <span>View trade show responsibilities</span>
+                            <i data-lucide="arrow-up-right" class="w-4 h-4 shrink-0"></i>
+                        </button>
+                    </div>
+
+                    <!-- Exhibition photo gallery -->
+                    <div class="lg:col-span-7 space-y-3">
+                        <div class="flex flex-wrap items-center justify-between gap-2 px-1">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-brand-blue animate-pulse"></span>
+                                <span class="font-display font-extrabold text-sm text-slate-900">Exhibition booth &amp; event highlights</span>
+                            </div>
+                            <span class="text-[11px] font-medium text-slate-400">Hover to pause</span>
+                        </div>
+
+                        <div class="marquee-wrapper relative overflow-hidden rounded-2xl bg-slate-100 py-4 border border-slate-200/70">
+                            <div class="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-slate-100 to-transparent z-10"></div>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-slate-100 to-transparent z-10"></div>
+
+                            <div id="exhibition-gallery-track" class="flex w-max animate-gallery-marquee">
+                                <div class="flex shrink-0 gap-4 pr-4">
+                                    <img src="./media/exhibition-1.png" alt="Exhibition photo 1" width="1200" height="800" class="h-40 w-60 shrink-0 rounded-xl border border-white object-cover shadow-sm" loading="lazy" decoding="async">
+                                    <img src="./media/exhibition-2.png" alt="Exhibition photo 2" width="1200" height="800" class="h-40 w-60 shrink-0 rounded-xl border border-white object-cover shadow-sm" loading="lazy" decoding="async">
+                                    <img src="./media/exhibition-3.png" alt="Exhibition photo 3" width="1200" height="800" class="h-40 w-60 shrink-0 rounded-xl border border-white object-cover shadow-sm" loading="lazy" decoding="async">
+                                    <img src="./media/exhibition-4.png" alt="Exhibition photo 4" width="1200" height="800" class="h-40 w-60 shrink-0 rounded-xl border border-white object-cover shadow-sm" loading="lazy" decoding="async">
+                                </div>
+                                <div class="flex shrink-0 gap-4 pr-4" aria-hidden="true">
+                                    <img src="./media/exhibition-1.png" alt="" width="1200" height="800" class="h-40 w-60 shrink-0 rounded-xl border border-white object-cover shadow-sm" loading="lazy" decoding="async">
+                                    <img src="./media/exhibition-2.png" alt="" width="1200" height="800" class="h-40 w-60 shrink-0 rounded-xl border border-white object-cover shadow-sm" loading="lazy" decoding="async">
+                                    <img src="./media/exhibition-3.png" alt="" width="1200" height="800" class="h-40 w-60 shrink-0 rounded-xl border border-white object-cover shadow-sm" loading="lazy" decoding="async">
+                                    <img src="./media/exhibition-4.png" alt="" width="1200" height="800" class="h-40 w-60 shrink-0 rounded-xl border border-white object-cover shadow-sm" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 04. CONTACT & KINETIC MARQUEE SECTION ==================== -->
+    <section id="contact" class="relative py-24 md:py-32 overflow-hidden bg-white border-t border-slate-200/70">
+        
+        <!-- Top Tilted Yellow Kinetic Marquee Ribbon -->
+        <div class="marquee-wrapper -rotate-2 scale-105 bg-brand-yellow text-slate-900 py-3 border-y-2 border-slate-900/10 shadow-sm mb-16">
+            <div class="flex whitespace-nowrap animate-marquee-left font-display font-extrabold text-xs sm:text-sm tracking-wider uppercase">
+                <span class="mx-4">MARKETING COMMUNICATIONS + PRODUCT MESSAGING + EMAIL CAMPAIGNS + SEO &amp; CONTENT STRATEGY + PAID SOCIAL + FRAMER &amp; WORDPRESS + AI-ASSISTED MEDIA +</span>
+                <span class="mx-4">MARKETING COMMUNICATIONS + PRODUCT MESSAGING + EMAIL CAMPAIGNS + SEO &amp; CONTENT STRATEGY + PAID SOCIAL + FRAMER &amp; WORDPRESS + AI-ASSISTED MEDIA +</span>
+            </div>
+        </div>
+
+        <!-- Center Contact Card -->
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center space-y-6 reveal">
+            <div class="w-20 h-20 mx-auto rounded-full p-1 bg-gradient-to-tr from-brand-blue to-brand-yellow shadow-lg">
+                <div class="w-full h-full rounded-full bg-white flex items-center justify-center text-brand-blue font-display font-extrabold text-2xl">
+                    YN
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-blue-50 text-brand-blue font-display font-bold text-xs uppercase tracking-wider">Contact
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-slate-900 tracking-tight">
+                    Get in <span class="text-brand-blue">touch</span>
+                </h2>
+            </div>
+
+            <p class="text-slate-600 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+                Open to marketing roles that combine product messaging, content writing, and campaign execution.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:ngonhi211@gmail.com?subject=Marketing%20Opportunity" data-toast="Emailing ngonhi211@gmail.com..." class="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-blue text-white font-display font-bold text-sm sm:text-base hover:bg-brand-darkBlue transition-all shadow-xl shadow-blue-600/25 flex items-center justify-center gap-2.5">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    <span>ngonhi211@gmail.com</span>
+                </a>
+                <a href="tel:0326322111" data-toast="Phone: 0326 322 111" class="w-full sm:w-auto px-7 py-4 rounded-full bg-white text-slate-900 border-2 border-slate-200 font-display font-bold text-sm sm:text-base hover:border-brand-blue hover:text-brand-blue transition-all flex items-center justify-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4 text-brand-blue"></i>
+                    <span>0326 322 111</span>
+                </a>
+                <a href="./media/nhi-ngo-marketing-executive-cv.pdf" download class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900 text-white font-display font-bold text-sm sm:text-base hover:bg-slate-800 transition-all flex items-center justify-center gap-2.5">
+                    <i data-lucide="file-text" class="w-5 h-5 text-brand-yellow"></i>
+                    <span>Download résumé</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Tilted Blue Kinetic Marquee Ribbon -->
+        <div class="marquee-wrapper rotate-2 scale-105 bg-brand-blue text-white py-3 shadow-md mt-16">
+            <div class="flex whitespace-nowrap animate-marquee-right font-display font-extrabold text-xs sm:text-sm tracking-wider uppercase">
+                <span class="mx-4">FINTECH • MANUFACTURING • EDTECH • 4+ YEARS EXPERIENCE • 3 SIGNED B2B CONTRACTS • 125 TOP 3 KEYWORDS • 117 FEATURED SNIPPETS FOR ADX PLYWOOD • 9× MONTHLY LEADS FOR WEBILL365 •</span>
+                <span class="mx-4">FINTECH • MANUFACTURING • EDTECH • 4+ YEARS EXPERIENCE • 3 SIGNED B2B CONTRACTS • 125 TOP 3 KEYWORDS • 117 FEATURED SNIPPETS FOR ADX PLYWOOD • 9× MONTHLY LEADS FOR WEBILL365 •</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-slate-950 text-slate-400 py-8 px-4 text-center text-xs sm:text-sm">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="font-display font-semibold text-white">Ngô Thị Yến Nhi — Marketing Executive</p>
+            <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+                <a href="#intro" class="hover:text-white transition-colors">Intro</a>
+                <a href="#work-numbers" class="hover:text-white transition-colors">Work in Numbers</a>
+                <a href="#work-action" class="hover:text-white transition-colors">Work in Action</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <dialog id="email-preview-dialog" aria-labelledby="email-preview-title" class="bg-white text-slate-900">
+        <div class="email-preview-layout">
+            <div class="email-preview-bar">
+                <div class="email-preview-dots" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h2 id="email-preview-title" class="font-display text-sm font-extrabold sm:text-base"></h2>
+                <button id="email-preview-close" type="button" aria-label="Close email preview" title="Close email preview" autofocus>
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div id="email-preview-scroll" tabindex="0" aria-label="Email content">
+                <iframe id="email-preview-expanded" title="Expanded email preview" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- ==================== INTERACTIVE PROJECT PREVIEW MODAL ==================== -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm transition-opacity">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 p-6 sm:p-8 relative animate-[fadeIn_0.25s_ease-out]">
+            <button type="button" id="project-modal-close" aria-label="Close preview" class="absolute top-5 right-5 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div id="modal-body" class="space-y-5">
+                <!-- Dynamic Content Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 bg-slate-900 text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 text-sm font-medium border border-slate-700">
+        <span class="w-2.5 h-2.5 rounded-full bg-brand-yellow"></span>
+        <span id="toast-message">Action completed</span>
+    </div>
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script src="./portfolio.js" defer></script>
+</body>
+</html>
