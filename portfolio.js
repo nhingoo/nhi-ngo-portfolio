@@ -1,3 +1,5 @@
+const isVietnamese = document.documentElement.lang === "vi";
+
 // Initialize Lucide Icons
 window.lucide?.createIcons();
 
@@ -62,7 +64,14 @@ function startTypewriter() {
     const el = document.getElementById('typewriter-text');
     if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-    const phrases = [
+    const phrases = isVietnamese ? [
+        'Ngô Thị Yến Nhi',
+        'Chuyên viên Marketing',
+        'Hơn 4 năm làm marketing',
+        'Marketing ngành fintech',
+        'Marketing B2B',
+        'Viết nội dung'
+    ] : [
         'Ngô Thị Yến Nhi',
         'Marketing Executive',
         '4+ Years in Marketing',
@@ -143,8 +152,8 @@ let expandedEmailObserver;
 
 function openEmailPreview(index, trigger) {
     const title = index === 1 ? 'WeCMS · Cash Management' : 'Morningmate · Team Collaboration';
-    document.getElementById('email-preview-title').textContent = title + ' — Full Email Preview';
-    expandedEmailFrame.title = title + ' email';
+    document.getElementById('email-preview-title').textContent = title + (isVietnamese ? ' — Xem toàn bộ email' : ' — Full Email Preview');
+    expandedEmailFrame.title = isVietnamese ? 'Email ' + title : title + ' email';
     expandedEmailFrame.classList.toggle('original-morningmate', index === 2);
     emailPreviewTrigger = trigger;
     previousPageOverflow = document.body.style.overflow;
@@ -269,7 +278,7 @@ function openCaseModal(key) {
             ${data.metric}
         </div>
         <div class="space-y-2.5 pt-2">
-            <p class="font-display font-bold text-xs uppercase tracking-wider text-slate-400">Project details</p>
+            <p class="font-display font-bold text-xs uppercase tracking-wider text-slate-400">${isVietnamese ? 'Chi tiết dự án' : 'Project details'}</p>
             <ul class="space-y-2">
                 ${data.highlights.map(item => `
                     <li class="flex items-start gap-2.5 text-sm text-slate-700">
@@ -356,7 +365,11 @@ document.getElementById('project-modal').addEventListener('click', (e) => {
 
 // 6. Interactive AI Media Multi-Slide Viewer (Click + Touch Swipe)
 let currentAiSlide = 0;
-const aiSlideTitles = [
+const aiSlideTitles = isVietnamese ? [
+    "Video 01 / 03 · Quảng cáo WeCMS",
+    "Video 02 / 03 · Quảng cáo song ngữ Morningmate",
+    "Hình ảnh 03 / 03 · Quảng cáo mạng xã hội"
+] : [
     "Video 01 / 03 · WeCMS Cash Management Ad",
     "Video 02 / 03 · Bilingual Morningmate Ad",
     "Visuals 03 / 03 · B2B Social Ad Visuals"
@@ -405,9 +418,8 @@ function selectAiSlide(index) {
     // Update Screen Header Label
     const label = document.getElementById('ai-screen-label');
     if (label) label.textContent = aiSlideTitles[currentAiSlide];
-    document.getElementById('ai-media-hint').textContent = currentAiSlide === 2
-        ? 'Hover to pause'
-        : 'Swipe or use the arrows';
+    const mediaHint = document.getElementById('ai-media-hint');
+    mediaHint.textContent = currentAiSlide === 2 ? mediaHint.dataset.pause : mediaHint.dataset.navigate;
 }
 
 function stepAiSlide(delta) {
